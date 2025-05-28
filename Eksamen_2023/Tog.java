@@ -1,7 +1,6 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import javax.swing.text.DefaultEditorKit.PasteAction;
 
 public class Tog implements Iterable<Skinnegaende> {
     protected Skinnegaende første;
