@@ -1,5 +1,3 @@
-package tester;
-
 import java.util.Scanner;
 
 // Stoppeklokke som ikke stopper når main() terminerer
@@ -16,6 +14,7 @@ class Stoppeklokke1 {
         System.out.print("Trykk Return for å stoppe...");
         tastatur.nextLine();
         System.out.println("Takk for nå");
+        tastatur.close();  // ?
     }
 }
 
