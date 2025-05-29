@@ -1,6 +1,9 @@
 package IN1010.Eksamen_2023_Konte;
 
-public class Kolonne {
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class Kolonne implements Iterable<Lederbil> {
     protected Bil første;
     protected Bil siste;
     
@@ -65,5 +68,41 @@ public class Kolonne {
         }
 
         bil.settKolonne(null);
+    }
+
+    @Override
+    public Iterator<Lederbil> iterator() {
+        return new KolonneIterator();
+    }
+
+    private class KolonneIterator implements Iterator<Lederbil> {
+        Bil curr;
+
+        public KolonneIterator() {
+            curr = første;
+
+            while (curr != null && curr instanceof Lederbil) {
+                curr = curr.neste;
+            }
+        }
+        
+        @Override
+        public boolean hasNext() {
+            return curr != null;
+        }
+
+        @Override
+        public Lederbil next() {
+            if (curr == null) {  // eller !hasNext()
+                throw new NoSuchElementException();
+            }
+
+            Lederbil temp = (Lederbil) curr;
+            curr = curr.neste;
+            while (curr != null && !(curr instanceof Lederbil)) {
+                curr = curr.neste;
+            }
+            return temp;
+        } 
     }
 }
