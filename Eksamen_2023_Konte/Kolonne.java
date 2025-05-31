@@ -105,4 +105,28 @@ public class Kolonne implements Iterable<Lederbil> {
             return temp;
         } 
     }
+
+    public void finnMaksfartR() {
+        if (første != null) {
+            første.finnLaveste();
+        }
+    }
+
+    public LederBil[] finnBesteEgnet() {
+        LederBil[] svar = new LederBil[5];
+        
+        for (Lederbil s : this) {
+            for (int i = 0; i < 5; i++) {
+                if (svar[i] = 0 || s.maksFart > svar[i].maksFart) {
+                    for (int j = 4; j > i; j--) {
+                        svar[j] = svar[j - 1];
+                    }
+                }
+
+                svar[i] = s;
+                break;
+            }
+        }
+        return svar;
+    }
 }
