@@ -1,4 +1,4 @@
-package IN1010.Eksamen_2023_Konte;
+package Eksamen_2023_Konte;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -112,19 +112,18 @@ public class Kolonne implements Iterable<Lederbil> {
         }
     }
 
-    public LederBil[] finnBesteEgnet() {
-        LederBil[] svar = new LederBil[5];
+    public Lederbil[] finnBesteEgnet() {
+        Lederbil[] svar = new Lederbil[5];
         
         for (Lederbil s : this) {
             for (int i = 0; i < 5; i++) {
-                if (svar[i] = 0 || s.maksFart > svar[i].maksFart) {
+                if (svar[i] == null || s.hentMaksHastighet() > svar[i].hentMaksHastighet()) {
                     for (int j = 4; j > i; j--) {
                         svar[j] = svar[j - 1];
                     }
+                    svar[i] = s;
+                    break;
                 }
-
-                svar[i] = s;
-                break;
             }
         }
         return svar;

@@ -1,14 +1,14 @@
-package IN1010.Eksamen_2023_Konte;
+package Eksamen_2023_Konte;
 
 public abstract class Bil {
     protected String id;
     protected Kolonne kolonne = null;
-    protected int maksFart; // enhet: km/t
+    protected int maksHastighet; // enhet: km/t
     protected Bil neste;
     protected Bil forrige;
 
     public Bil(int maksHastighet) {
-        this.maksFart = maksHastighet;
+        this.maksHastighet = maksHastighet;
     }
 
     public void settNeste(Bil neste) {
@@ -27,12 +27,16 @@ public abstract class Bil {
         return kolonne;
     }
 
+    public int hentMaksHastighet() {
+        return maksHastighet;
+    }
+
     public int finnLaveste() {
         if (neste == null) {
             throw new IllegalStateException("Kolonnen er tom");
         }
         int lavestHosNeste = neste.finnLaveste();
-        return Math.min(maksFart, lavestHosNeste);
+        return Math.min(maksHastighet, lavestHosNeste);
     }
 }
 

@@ -1,4 +1,4 @@
-package IN1010.Eksamen_2023_Konte;
+package Eksamen_2023_Konte;
 
 public class UgyldigBilUnntak extends RuntimeException {
     UgyldigBilUnntak(String melding) {
