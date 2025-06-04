@@ -2,7 +2,6 @@ package Eksamen_2023_Konte;
 
 public class KolonneG <E extends Bil> {
     private E første, siste;
-    private int antall;
 
     public void settInn(E ny) {
         if (første == null) {
