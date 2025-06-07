@@ -1,12 +1,13 @@
-package hoved;
+package Legesystem.hoved;
 
 import java.io.*;
 import java.util.*;
 
-import liste_skjelett.*;
-import legemidler.*;
-import personer.*;
-import resepter.*;
+// import liste_skjelett.*;
+import Legesystem.liste_skjelett.*;
+import Legesystem.legemidler.*;
+import Legesystem.personer.*;
+import Legesystem.resepter.*;
 
 public class Legesystem {
     private IndeksertListe<Pasient> pasienter = new IndeksertListe<>();

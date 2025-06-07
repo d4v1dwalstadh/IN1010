@@ -1,7 +1,7 @@
-package resepter;
+package Legesystem.resepter;
 
-import legemidler.Legemiddel;
-import personer.*;
+import Legesystem.legemidler.Legemiddel;
+import Legesystem.personer.*;
 
 public class MilitaerResept extends HvitResept {
     public MilitaerResept(Legemiddel legemiddel, Lege utskrivendeLege, Pasient pasient) {

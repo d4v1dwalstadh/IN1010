@@ -1,8 +1,8 @@
-package hoved;
+package Legesystem.hoved;
 
-import legemidler.*;
-import personer.*;
-import resepter.*;
+import Legesystem.legemidler.*;
+import Legesystem.personer.*;
+import Legesystem.resepter.*;
 
 public class Hovedprogram {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package liste_skjelett;
+package Legesystem.liste_skjelett;
 
 class Stabel <E> extends Lenkeliste<E> {
     @Override

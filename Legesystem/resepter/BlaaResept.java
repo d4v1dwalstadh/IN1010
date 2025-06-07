@@ -1,7 +1,7 @@
-package resepter;
+package Legesystem.resepter;
 
-import legemidler.Legemiddel;
-import personer.*;
+import Legesystem.legemidler.Legemiddel;
+import Legesystem.personer.*;
 
 public class BlaaResept extends Resept {
     public BlaaResept(Legemiddel legemiddel, Lege utskrivendeLege, Pasient pasient, int reit) {

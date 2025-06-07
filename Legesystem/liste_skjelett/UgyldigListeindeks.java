@@ -1,4 +1,4 @@
-package liste_skjelett;
+package Legesystem.liste_skjelett;
 
 class UgyldigListeindeks extends RuntimeException {
     UgyldigListeindeks (String indeks) {

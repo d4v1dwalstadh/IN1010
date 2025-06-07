@@ -1,4 +1,4 @@
-package liste_skjelett;
+package Legesystem.liste_skjelett;
 
 public class Prioritetskø <E extends Comparable<E>> extends Lenkeliste<E> {
     @Override

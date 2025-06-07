@@ -1,4 +1,4 @@
-package liste_skjelett;
+package Legesystem.liste_skjelett;
 
 public class IndeksertListe<E> extends Lenkeliste<E> {
     public void leggTil(int pos, E x) {

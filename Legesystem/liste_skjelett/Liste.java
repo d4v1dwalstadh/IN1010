@@ -1,4 +1,4 @@
-package liste_skjelett;
+package Legesystem.liste_skjelett;
 
 interface Liste <E> extends Iterable<E> {
     int størrelse ();

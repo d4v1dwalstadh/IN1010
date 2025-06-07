@@ -1,4 +1,4 @@
-package legemidler;
+package Legesystem.legemidler;
 
 public class Vanlig extends Legemiddel {
 

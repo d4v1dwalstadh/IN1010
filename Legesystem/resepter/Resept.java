@@ -1,6 +1,6 @@
-package resepter;
-import legemidler.Legemiddel;
-import personer.*;
+package Legesystem.resepter;
+import Legesystem.legemidler.Legemiddel;
+import Legesystem.personer.*;
 
 
 public abstract class Resept {

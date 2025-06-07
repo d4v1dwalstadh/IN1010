@@ -1,8 +1,8 @@
-package personer;
+package Legesystem.personer;
 
-import liste_skjelett.IndeksertListe;
-import resepter.*;
-import legemidler.*;
+import Legesystem.liste_skjelett.IndeksertListe;
+import Legesystem.resepter.*;
+import Legesystem.legemidler.*;
 
 public class Lege implements Comparable<Lege> {
     protected final String navn;

@@ -1,10 +1,10 @@
-package personer;
+package Legesystem.personer;
 
-import legemidler.Legemiddel;
-import legemidler.Narkotisk;
-import resepter.BlaaResept;
-import resepter.HvitResept;
-import resepter.Resept;
+import Legesystem.legemidler.Legemiddel;
+import Legesystem.legemidler.Narkotisk;
+import Legesystem.resepter.BlaaResept;
+import Legesystem.resepter.HvitResept;
+import Legesystem.resepter.Resept;
 
 public class Spesialist extends Lege implements Godkjenningsfritak {
     private String kontrollkode;

@@ -1,7 +1,7 @@
-package personer;
+package Legesystem.personer;
 
-import liste_skjelett.*;
-import resepter.*;
+import Legesystem.liste_skjelett.*;
+import Legesystem.resepter.*;
 
 public class Pasient {
     protected final String navn;

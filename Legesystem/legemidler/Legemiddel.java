@@ -1,4 +1,4 @@
-package legemidler;
+package Legesystem.legemidler;
 
 public abstract class Legemiddel {
     public final String navn;

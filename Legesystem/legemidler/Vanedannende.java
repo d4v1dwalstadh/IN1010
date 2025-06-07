@@ -1,4 +1,4 @@
-package legemidler;
+package Legesystem.legemidler;
 
 public class Vanedannende extends Legemiddel {
     public final int styrke;
